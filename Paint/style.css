@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #1c1a1a;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tool {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.tool .pen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid white;
+}
+
+.tool .pen .incdec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool .pen .dim {
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.tool .pen .incdec button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.tool .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    height: 100%;
+    width: 33%;
+}
+
+.tool .color .color-label {
+    width: 60px;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    text-align: center;
+}
+
+.tool .color .color-selector {
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.clear-container {
+    width: 33%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.clear {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: none;
+    text-align: center;
+    font-size: 1.5em;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+canvas {
+    background-color: white;
+    cursor: cell;
+}
