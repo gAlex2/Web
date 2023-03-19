@@ -47,10 +47,6 @@ body {
     transform: rotate(180deg);
 }
 
-.container .container-btn .btn:active {
-    transform: rotate(180deg);
-}
-
 .container .container-btn:hover {
     background-color: rgb(39, 39, 48);
     transform: scale(1.1);
