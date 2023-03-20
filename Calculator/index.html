@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" id="ac">
+                    <input type="button" value="DE" id="de">
+                    <input type="button" value="." id="dot">
+                    <input type="button" value="/" id="divisione">
+                </div>
+                <div>
+                    <input type="button" value="7" id="sette">
+                    <input type="button" value="8" id="otto">
+                    <input type="button" value="9" id="nove">
+                    <input type="button" value="*" id="moltiplicazione">
+                </div>
+                <div>
+                    <input type="button" value="4" id="quattro">
+                    <input type="button" value="5" id="cinque">
+                    <input type="button" value="6" id="sei">
+                    <input type="button" value="-" id="sottrazione">
+                </div>
+                <div>
+                    <input type="button" value="1" id="uno">
+                    <input type="button" value="2" id="due">
+                    <input type="button" value="3" id="tre">
+                    <input type="button" value="+" id="somma">
+                </div>
+                <div>
+                    <input type="button" value="00" id="doppio-zero">
+                    <input type="button" value="0" id="zero">
+                    <input type="button" value="=" class="equal" id="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        let b_ac = document.getElementById("ac");
+        b_ac.addEventListener("click",function() {
+            document.getElementById("display").value = "";
+        });
+
+        let b_de = document.getElementById("de");
+        b_de.addEventListener("click",function() {
+            document.getElementById("display").value = document.getElementById("display").value.toString().slice(0,-1);
+        });
+
+        let b_dot = document.getElementById("dot");
+        b_dot.addEventListener("click",function() {
+            document.getElementById("display").value += ".";
+        });
+
+        let b_0 = document.getElementById("zero");
+        b_0.addEventListener("click",function() {
+            document.getElementById("display").value += "0";
+        });
+
+        let b_00 = document.getElementById("doppio-zero");
+        b_00.addEventListener("click",function() {
+            document.getElementById("display").value += "00";
+        });
+
+        let b_1 = document.getElementById("uno");
+        b_1.addEventListener("click",function() {
+            document.getElementById("display").value += "1";
+        });
+
+        let b_2 = document.getElementById("due");
+        b_2.addEventListener("click",function() {
+            document.getElementById("display").value += "2";
+        });
+
+        let b_3 = document.getElementById("tre");
+        b_3.addEventListener("click",function() {
+            document.getElementById("display").value += "3";
+        });
+
+        let b_4 = document.getElementById("quattro");
+        b_4.addEventListener("click",function() {
+            document.getElementById("display").value += "4";
+        });
+        
+        let b_5 = document.getElementById("cinque");
+        b_5.addEventListener("click",function() {
+            document.getElementById("display").value += "5";
+        });
+
+        let b_6 = document.getElementById("sei");
+        b_6.addEventListener("click",function() {
+            document.getElementById("display").value += "6";
+        });
+
+        let b_7 = document.getElementById("sette");
+        b_7.addEventListener("click",function() {
+            document.getElementById("display").value += "7";
+        });
+
+        let b_8 = document.getElementById("otto");
+        b_8.addEventListener("click",function() {
+            document.getElementById("display").value += "8";
+        });
+
+        let b_9 = document.getElementById("nove");
+        b_9.addEventListener("click",function() {
+            document.getElementById("display").value += "9";
+        });
+
+        let b_somma = document.getElementById("somma");
+        b_somma.addEventListener("click",function() {
+            document.getElementById("display").value += "+";
+        });
+
+        let b_sottrazione = document.getElementById("sottrazione");
+        b_sottrazione.addEventListener("click",function() {
+            document.getElementById("display").value += "-";
+        });
+
+        let b_moltiplicazione = document.getElementById("moltiplicazione");
+        b_moltiplicazione.addEventListener("click",function() {
+            document.getElementById("display").value += "*";
+        });
+
+        let b_divisione = document.getElementById("divisione");
+        b_divisione.addEventListener("click",function() {
+            document.getElementById("display").value += "/";
+        });
+
+        let b_equal = document.getElementById("equal");
+        b_equal.addEventListener("click",function() {
+            document.getElementById("display").value = eval(document.getElementById("display").value);
+        });
+
+    </script>
+</body>
+</html>
