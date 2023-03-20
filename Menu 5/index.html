@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#" id="submenu-btn">Submenu</a>
+                <div class="submenu">
+                    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt porro repudiandae
+                        officiis excepturi laudantium voluptatum quia numquam nulla labore ab, doloremque
+                        accusantium voluptates similique amet quo. Ea nam maiores vitae?</h1>
+                </div>
+            </li>
+            <li><a href="#">Get Started</a></li>
+    </header>
+
+    <script>
+
+        const submenu_btn = document.querySelector("#submenu-btn");
+        const submenu = document.querySelector(".submenu");
+
+        submenu_btn.onclick = function () {
+            submenu.classList.toggle("show");
+        };
+
+    </script>
+
+</body>
+
+</html>
