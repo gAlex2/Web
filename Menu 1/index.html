@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="button">
+        <span class="button-icon"></span>
+        <span class="button-icon"></span>
+        <span class="button-icon"></span>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <hr>
+    </div>
+
+    <script>
+
+        let x = document.querySelector(".button");
+
+        x.onclick = function() {
+            let y = document.querySelector(".menu");
+
+            y.classList.toggle("show");
+        };
+
+    </script>
+
+</body>
+</html>
