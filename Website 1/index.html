@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="logo.png" alt="" class="logo"></a>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="left-side">
+            <h1>Website Name</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam assumenda suscipit exercitationem.</p>
+        </div>
+        <div class="right-side">
+            <img src="foto1.png" alt="" class="image">
+        </div>
+    </section>
+    <div class="selector">
+        <ul class="selector-menu">
+            <li><img src="foto1.png" alt="" onclick="changeImage('foto1.png')"></li>
+            <li><img src="foto2.png" alt="" onclick="changeImage('foto2.png')"></li>
+            <li><img src="foto3.png" alt="" onclick="changeImage('foto3.png')"></li>
+        </ul>
+    </div>
+    <div class="background1"></div>
+    <div class="background2"></div>
+
+    <script>
+        function changeImage(immagine) {
+            let x = document.querySelector(".image");
+            x.src = immagine;
+        }
+    </script>
+
+</body>
+</html>
