@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(50, 20, 5, 0.7), rgba(5, 3, 8, 0.7)), url("sfondo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: relative;
+    padding: 2rem;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+header .logo a:hover {
+    color: red;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px;
+}
+
+header .menu li {
+    list-style: none;
+}
+
+header .menu li a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    transition: 1s;
+}
+
+header .menu li a:hover {
+    color: red;
+}
+
+header .button {
+    margin-left: auto;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    transition: 1s;
+    font-weight: bold;
+}
+
+header .button:hover {
+    color: red;
+    background-color: white;
+}
+
+.dropmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 300px;
+    height: 0px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: rgba(5, 3, 8, 0.7);
+}
+
+.dropmenu li {
+    padding: 0.7rem;
+    list-style: none;
+}
+
+.dropmenu li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.dropmenu li a:hover {
+    color: red;
+}
+
+.dropmenu .button2 {
+    margin-left: auto;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.dropmenu .button2:hover {
+    color: red;
+    background-color: white;
+}
+
+.dropmenu.open {
+    height: 300px;
+}
+
+.toggle_btn {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    transition: 1s;
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+.toggle_btn:hover {
+    color: red;
+}
+
+.content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+    .toggle_btn {
+        display: block;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .button {
+        display: none;
+    }
+}
