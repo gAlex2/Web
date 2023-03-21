@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content {
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(59, 26, 110, 0.7)), url("../img/sfondo.png");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .title {
+    text-align: center;
+    line-height: 50px;
+}
+
+.content .title h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.content .title h4 {
+    color: white;
+    font-size: 20px;
+}
